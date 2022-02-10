@@ -17,7 +17,7 @@
     <header class="animate__animated animate__fadeInRight">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark nav nav-tabs">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><i class="fas fa-om"></i><img src="gif/legacies.gif" alt="legacies"> <i class="fas fa-dog"></i></a>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="legacies" ></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,19 +50,20 @@
     <main>
 
       <section>
-        <img src="gif/elenco.gif" class=" img-fluid w-100 "></video>
+        <img src="gif/elenco.gif" class=" img-fluid w-100"></video>
       </section>
 
         <div class=" wow container mt-5 animate__animated animate__backInUp">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-4 ">
-                    <video controls src="videos/intro.mp4" alt="legacies" class="img-fluid w-100">
+                  
+                    <video controls src="videos/intro.mp4" alt="legacies" class="img-fluid w-100" autoplay="autoplay" muted="false">
                 </div>
                 <div class="col-12 col-md-4 text-black">
                     <p>
                         Legacies is an American fantasy drama television series, created by Julie Plec, that premiered on The CW on October 25, 2018. It is a spin-off of The Originals and features characters from both that series and its predecessor, The Vampire Diaries. Danielle Rose Russell stars as the 17-year-old Hope Mikaelson, continuing the role she originated in the fifth and final season of The Originals. Matt Davis also features prominently in the series, reprising his role as Alaric Saltzman from The Vampire Diaries. The third season premiered on January 21, 2021.In February 2021, The CW renewed the series for a fourth season which premiered on October 14, 2021.
                     </p> 
-                    <button class="btn btn-success mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <button class="btn btn-danger mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <i class="fas fa-clipboard-check"></i>   Sign up
                       </button>                  
                 </div>
@@ -78,22 +79,22 @@
                 <div class="offcanvas-body">
                   <div class="container">
                     
-                    <img src="img/registrate.jpg" alt="" class="w-100 img-fluid rounded-circle ">
+                    <img src="gif/legacies.gif" alt="" class="w-100 img-fluid rounded-circle ">
 
 
 
                     <form>
 
                       <div class="mb-3">
-                        <label class="form-label text-success">Correo</label>
+                        <label class="form-label text-danger">Correo</label>
                         <input type="email" class="form-control" id="cajaemail">
                       </div>
                       <div class="mb-3">
-                        <label class="form-label text-success">Password</label>
+                        <label class="form-label text-danger">Password</label>
                         <input type="password" class="form-control" id="cajapassword">
                         
                       </div>
-                      <button type="submit" class="btn btn-success" id="botonregistro">Registrate</button>
+                      <button type="submit" class="btn btn-danger" id="botonregistro">Registrate</button>
                     </form> 
                   </div>                  
                 </div>
@@ -204,6 +205,37 @@
 
         </div>
       </div>
+
+      <section>
+        <!-- Modal -->
+          <div class="modal fade" id="modallogin">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header text-dark">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4 id="mensajelogin"></h4>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

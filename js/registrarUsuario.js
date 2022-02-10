@@ -4,6 +4,12 @@ import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/f
 
 // Paso1. para registrar a una persona en su app
 let botonRegistro=document.getElementById("botonregistro")
+
+//1.1 creo una  referencia global a la ventana modal
+let modallogin=new bootstrap.Modal(document.getElementById('modallogin'))
+let mensajelogin=document.getElementById("mensajelogin")
+
+
 botonRegistro.addEventListener("click", function(event){
     event.preventDefault()
 
@@ -23,12 +29,17 @@ botonRegistro.addEventListener("click", function(event){
     // Signed in
     const user = userCredential.user;
     // ...
+    mensajelogin.textContent="Exito en su registro. Bienvenido "
+    modallogin.show()
     console.log("todo bn papa")
     })
+    
      .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     // ..
+    mensajelogin.textContent=`Error: ${errorCode} : ${errorMessage}`
+    modallogin.show()
     console.log("error")
     });
 })
