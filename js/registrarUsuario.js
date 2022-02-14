@@ -30,7 +30,7 @@ botonRegistro.addEventListener("click", function(event){
     // Signed in
     const user = userCredential.user;
     // ...
-    mensajelogin.textContent="Exito en su registro. Bienvenido "
+    mensajelogin.textContent="success in your registration."
     modallogin.show()
     console.log("todo bn papa")
     })
@@ -39,7 +39,7 @@ botonRegistro.addEventListener("click", function(event){
     const errorCode = error.code;
     const errorMessage = error.message;
     // ..
-    mensajelogin.textContent=`Error: ${errorCode} : ${errorMessage}`
+    mensajelogin.textContent=`Error ******** : User already registered`
     modallogin.show()
     console.log("error")
     });

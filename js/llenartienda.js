@@ -61,7 +61,7 @@ let tarjeta=document.createElement("div")
 
     let precio=document.createElement("h5")
     precio.classList.add("text-center")
-    precio.classList.add("text-info")    
+    precio.classList.add("text-dark")    
     precio.textContent=+produto.precio
 
     let descripcion=document.createElement("h7")

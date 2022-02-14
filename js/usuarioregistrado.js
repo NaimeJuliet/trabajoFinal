@@ -31,7 +31,7 @@ const user = userCredential.user;
 .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    mensajeingresar.textContent="Bienvenido "
+    mensajeingresar.textContent=`Error${errorCode} : ${errorMessage}`
     modalIngresar.show()
     console.log("ok")
 });
