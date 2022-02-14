@@ -2,6 +2,7 @@
 import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js"
 
 
+
 // Paso1. para registrar a una persona en su app
 let botonRegistro=document.getElementById("botonregistro")
 
@@ -42,4 +43,7 @@ botonRegistro.addEventListener("click", function(event){
     modallogin.show()
     console.log("error")
     });
+
+
+
 })

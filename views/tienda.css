@@ -1,0 +1,28 @@
+.fondo{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,25,1) 58%, rgba(255,0,0,1) 100%);
+}
+
+
+h3{
+    font-weight: bold  !important;
+}
+#carrovacio{
+    background-color: rgb(252, 249, 249);
+}
+h2{
+    color: #f8e800fb !important;
+}
+.modal-content{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(219, 122, 171) 0%, rgba(121,9,25,1) 58%, rgb(238, 180, 235) 100%);
+}
+
+#titulo{
+    font-family:fantasy;
+    font-size: 45px;
+}
+.fondoTarjeta{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(219, 122, 171) 0%, rgba(121,9,25,1) 58%, rgb(238, 180, 235) 100%);
+}

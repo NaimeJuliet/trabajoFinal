@@ -37,6 +37,9 @@ listaProductos.addEventListener("click", function(event){
         carrito.push(producto)
         //Oculto la modal de info producto
         modalinfoproducto.hide()  
+
+        let etiquetaCantidad=document.getElementById("cantidadProducto")
+        etiquetaCantidad.value=1
         //llamar la funcion agregarCarrito
         agregarCarrito(carrito)
 
@@ -46,3 +49,26 @@ listaProductos.addEventListener("click", function(event){
     botonVerCarrito.addEventListener("click", function(){
       verCarrito(carrito)
     })
+
+    let btnLimpiar=document.getElementById("clean")
+    btnLimpiar.addEventListener("click",function(){        
+        
+        let contenedorModal=document.getElementById("contenedorCarrito")
+        contenedorModal.innerHTML=""
+        contenedorModal=[]
+
+        let pildora=document.getElementById("pildora")
+        pildora.innerHTML=""
+        pildora=[]
+        
+        let borrarTotal=document.getElementById("btntotal")
+        borrarTotal.innerHTML="btntotal"
+        borrarTotal=[]
+
+        let cambiarUsd=document.getElementById("USD")
+        cambiarUsd.innerHTML="USD"
+        cambiarUsd=[]
+
+        carrito=[]
+        
+})
